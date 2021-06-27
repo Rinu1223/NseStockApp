@@ -1,0 +1,37 @@
+<h3>Welcome {{user}}</h3>
+
+
+
+
+
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> NSE Stock </h2>
+      
+  
+      <!-- Icon -->
+      
+  
+      <!-- Login Form -->
+      
+      <form>
+          
+        <input type="submit" class="fadeIn fourth createbtn"  value="Create Stock" (click)="createStock()">
+       
+      </form>
+  
+      
+     
+  
+    </div>
+    <form>
+         <input type="text" name="search" [(ngModel)]="filterTerm" placeholder="search" >
+        <ul >
+            <li *ngFor="let result of data | filter:filterTerm;let i=index"  >
+             {{result.Name}}
+            </li>
+        </ul> 
+        </form>
+  </div>

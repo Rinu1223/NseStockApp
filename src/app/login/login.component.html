@@ -1,0 +1,27 @@
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+      
+  
+      <!-- Icon -->
+      
+  
+      <!-- Login Form -->
+      
+      <form (ngSubmit)="login()" [formGroup]="loginform">
+        <input type="text"  class="fadeIn second" name="login" formControlName="Username" placeholder="User Name">
+
+        <div class="errors" *ngIf="(loginform.get('Username')?.touched || loginform.get('Username')?.dirty) && loginform.get('Username')?.errors " >Invalid User ID</div>
+        <input type="text"  class="fadeIn third" name="login"  formControlName="pswd"  placeholder="password">
+        <div class="errors" *ngIf="(loginform.get('pswd')?.touched || loginform.get('pswd')?.dirty) && loginform.get('pswd')?.errors " >Invalid password</div>
+        <input type="submit" class="fadeIn fourth"  value="Log In">
+       
+      </form>
+  
+      
+     
+  
+    </div>
+  </div>

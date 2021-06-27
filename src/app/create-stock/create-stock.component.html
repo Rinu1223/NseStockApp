@@ -1,0 +1,67 @@
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Create Event </h2>
+     
+  
+      <!-- Icon -->
+      
+  
+      <!-- Login Form -->
+      
+      <form (ngSubmit)="createStock()" [formGroup]="addform" >
+        <input type="text" class="fadeIn second" formControlName="Name"  name="Name" placeholder="Name">
+        <div class="errors" *ngIf="(addform.get('Name')?.touched || addform.get('Name')?.dirty) && addform.get('Name')?.errors ">please enter stock name</div>
+        
+        <input type="text"  class="fadeIn third" name="CurrentMarketPrice" formControlName="CurrentMarketPrice" placeholder="Current Market Price">
+        <div class="errors" *ngIf="(addform.get('CurrentMarketPrice')?.touched || addform.get('CurrentMarketPrice')?.dirty) && addform.get('CurrentMarketPrice')?.errors ">Please enter Current Market Price</div>
+        
+        <input type="text"  class="fadeIn third" name="MarketCap" formControlName="MarketCap" placeholder="MarketCap">
+        <div class="errors" *ngIf="(addform.get('MarketCap')?.touched || addform.get('MarketCap')?.dirty) && addform.get('MarketCap')?.errors ">Please enter Market Cap</div>
+        
+        <input type="text"  class="fadeIn third" name="StockPE" formControlName="StockPE" placeholder="StockPE">
+        <div class="errors" *ngIf="(addform.get('StockPE')?.touched || addform.get('StockPE')?.dirty) && addform.get('StockPE')?.errors ">Please enter Stock P/E</div>
+        
+        <input type="text"  class="fadeIn third" name="DividendYield" formControlName="DividendYield" placeholder="DividendYield">
+        <div class="errors" *ngIf="(addform.get('DividendYield')?.touched || addform.get('DividendYield')?.dirty) && addform.get('DividendYield')?.errors ">Please enter Dividend Yield</div>
+        
+        <input type="text"  class="fadeIn third" name="ROCE" formControlName="ROCE" placeholder="ROCE">
+        <div class="errors" *ngIf="(addform.get('ROCE')?.touched || addform.get('ROCE')?.dirty) && addform.get('ROCE')?.errors ">Please enter ROCE</div>
+        
+        <input type="text"  class="fadeIn third" name="ROEPreviousAnnum" formControlName="ROEPreviousAnnum" placeholder="ROE Previous Annum">
+        <div class="errors" *ngIf="(addform.get('ROEPreviousAnnum')?.touched || addform.get('ROEPreviousAnnum')?.dirty) && addform.get('ROEPreviousAnnum')?.errors ">Please enter ROE Previous Annum</div>
+        
+        <input type="text"  class="fadeIn third" name="DebtToEquity" formControlName="DebtToEquity" placeholder="DebtToEquity">
+        <div class="errors" *ngIf="(addform.get('DebtToEquity')?.touched || addform.get('DebtToEquity')?.dirty) && addform.get('DebtToEquity')?.errors ">Please enter Debt To Equity</div>
+        
+        <input type="text"  class="fadeIn third" name="EPS" formControlName="EPS" placeholder="EPS">
+        <div class="errors" *ngIf="(addform.get('EPS')?.touched || addform.get('EPS')?.dirty) && addform.get('EPS')?.errors ">Please enter EPS</div>
+        
+        <input type="text"  class="fadeIn third" name="Reserves" formControlName="Reserves" placeholder="Reserves">
+        <div class="errors" *ngIf="(addform.get('Reserves')?.touched || addform.get('Reserves')?.dirty) && addform.get('Reserves')?.errors ">Please enter Reserves</div>
+        
+        <input type="text"  class="fadeIn third" name="Debt" formControlName="Debt" placeholder="Debt">
+        <div class="errors" *ngIf="(addform.get('Debt')?.touched || addform.get('Debt')?.dirty) && addform.get('Debt')?.errors ">Please enter Debt</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <input type="submit" class="fadeIn fourth"  value="Add">
+        <input type="submit" class="fadeIn fourth"  value="back" >
+        
+      </form>
+  
+      
+     
+  
+    </div>
+  </div>
